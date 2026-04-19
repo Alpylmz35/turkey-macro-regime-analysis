@@ -1,0 +1,15 @@
+model,asset,sample,n_obs,r_squared
+baseline,bist,full_sample,1889,0.11743789752332534
+baseline,gold,full_sample,1889,0.5739299052069684
+interaction_fx_stress,bist,full_sample,1889,0.12131633857084467
+interaction_fx_stress,gold,full_sample,1889,0.5747532184077737
+interaction_high_inflation,bist,full_sample,1889,0.1180405622842372
+interaction_high_inflation,gold,full_sample,1889,0.5740568280583791
+interaction_tight_policy,bist,full_sample,1889,0.11874289350803924
+interaction_tight_policy,gold,full_sample,1889,0.5743802686039128
+subsample_fx_stress,bist,fx_stress,35,0.25723071690800325
+subsample_fx_stress,gold,fx_stress,35,0.9727265535905917
+subsample_high_inflation,bist,high_inflation,722,0.06522226960861865
+subsample_high_inflation,gold,high_inflation,722,0.22957354606294078
+subsample_tight_policy,bist,tight_policy,636,0.10553160356547098
+subsample_tight_policy,gold,tight_policy,636,0.20572843732118495

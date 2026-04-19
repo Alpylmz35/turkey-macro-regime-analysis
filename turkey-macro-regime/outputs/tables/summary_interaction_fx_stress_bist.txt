@@ -1,0 +1,33 @@
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:               bist_ret   R-squared:                       0.121
+Model:                            OLS   Adj. R-squared:                  0.118
+Method:                 Least Squares   F-statistic:                     13.38
+Date:                Sun, 19 Apr 2026   Prob (F-statistic):           6.10e-17
+Time:                        15:03:23   Log-Likelihood:                 5111.0
+No. Observations:                1889   AIC:                        -1.021e+04
+Df Residuals:                    1881   BIC:                        -1.016e+04
+Df Model:                           7                                         
+Covariance Type:                  HAC                                         
+======================================================================================
+                         coef    std err          z      P>|z|      [0.025      0.975]
+--------------------------------------------------------------------------------------
+const                  0.0019      0.001      3.226      0.001       0.001       0.003
+usdtry_ret            -0.0480      0.061     -0.781      0.435      -0.169       0.072
+fx_vol_5d             -0.0963      0.088     -1.090      0.276      -0.270       0.077
+bond2y_change_bps  -3.128e-05   1.63e-05     -1.915      0.055   -6.33e-05    7.31e-07
+cds5y_change          -0.0004   4.92e-05     -7.694      0.000      -0.000      -0.000
+bist_ret_l1           -0.0126      0.025     -0.501      0.617      -0.062       0.037
+D_fx_stress            0.0017      0.003      0.579      0.563      -0.004       0.007
+usdtry_x_fx_stress     0.2212      0.090      2.452      0.014       0.044       0.398
+==============================================================================
+Omnibus:                      231.789   Durbin-Watson:                   1.989
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):             1530.501
+Skew:                          -0.364   Prob(JB):                         0.00
+Kurtosis:                       7.349   Cond. No.                     1.24e+04
+==============================================================================
+
+Notes:
+[1] Standard Errors are heteroscedasticity and autocorrelation robust (HAC) using 5 lags and without small sample correction
+[2] The condition number is large, 1.24e+04. This might indicate that there are
+strong multicollinearity or other numerical problems.

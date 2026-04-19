@@ -1,0 +1,33 @@
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:               gold_ret   R-squared:                       0.574
+Model:                            OLS   Adj. R-squared:                  0.573
+Method:                 Least Squares   F-statistic:                     322.0
+Date:                Sun, 19 Apr 2026   Prob (F-statistic):          3.25e-316
+Time:                        15:03:24   Log-Likelihood:                 6059.4
+No. Observations:                1889   AIC:                        -1.210e+04
+Df Residuals:                    1881   BIC:                        -1.206e+04
+Df Model:                           7                                         
+Covariance Type:                  HAC                                         
+=========================================================================================
+                            coef    std err          z      P>|z|      [0.025      0.975]
+-----------------------------------------------------------------------------------------
+const                     0.0008      0.000      2.425      0.015       0.000       0.001
+usdtry_ret                0.9619      0.024     40.877      0.000       0.916       1.008
+fx_vol_5d                -0.0458      0.018     -2.489      0.013      -0.082      -0.010
+bond2y_change_bps     -4.457e-06   5.01e-06     -0.890      0.373   -1.43e-05    5.35e-06
+cds5y_change          -4.513e-05   2.29e-05     -1.974      0.048      -9e-05   -3.15e-07
+gold_ret_l1              -0.0076      0.015     -0.503      0.615      -0.037       0.022
+D_tight_policy            0.0007      0.000      1.407      0.159      -0.000       0.002
+usdtry_x_tight_policy    -0.0441      0.063     -0.697      0.485      -0.168       0.080
+==============================================================================
+Omnibus:                      210.315   Durbin-Watson:                   2.023
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):             1279.416
+Skew:                          -0.325   Prob(JB):                    1.51e-278
+Kurtosis:                       6.979   Cond. No.                     1.83e+04
+==============================================================================
+
+Notes:
+[1] Standard Errors are heteroscedasticity and autocorrelation robust (HAC) using 5 lags and without small sample correction
+[2] The condition number is large, 1.83e+04. This might indicate that there are
+strong multicollinearity or other numerical problems.

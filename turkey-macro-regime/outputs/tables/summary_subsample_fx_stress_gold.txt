@@ -1,0 +1,31 @@
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:               gold_ret   R-squared:                       0.973
+Model:                            OLS   Adj. R-squared:                  0.968
+Method:                 Least Squares   F-statistic:                     599.5
+Date:                Sun, 19 Apr 2026   Prob (F-statistic):           2.50e-28
+Time:                        15:03:27   Log-Likelihood:                 127.75
+No. Observations:                  35   AIC:                            -243.5
+Df Residuals:                      29   BIC:                            -234.2
+Df Model:                           5                                         
+Covariance Type:                  HAC                                         
+=====================================================================================
+                        coef    std err          z      P>|z|      [0.025      0.975]
+-------------------------------------------------------------------------------------
+const                -0.0005      0.001     -0.604      0.546      -0.002       0.001
+usdtry_ret            1.0721      0.043     24.818      0.000       0.987       1.157
+fx_vol_5d            -0.0186      0.034     -0.544      0.587      -0.086       0.048
+bond2y_change_bps -4.997e-06      1e-05     -0.499      0.618   -2.46e-05    1.46e-05
+cds5y_change         -0.0001   6.58e-05     -1.902      0.057      -0.000    3.79e-06
+gold_ret_l1           0.0294      0.040      0.737      0.461      -0.049       0.108
+==============================================================================
+Omnibus:                        4.053   Durbin-Watson:                   2.203
+Prob(Omnibus):                  0.132   Jarque-Bera (JB):                1.827
+Skew:                           0.200   Prob(JB):                        0.401
+Kurtosis:                       1.955   Cond. No.                     6.93e+03
+==============================================================================
+
+Notes:
+[1] Standard Errors are heteroscedasticity and autocorrelation robust (HAC) using 5 lags and without small sample correction
+[2] The condition number is large, 6.93e+03. This might indicate that there are
+strong multicollinearity or other numerical problems.
